@@ -1,68 +1,29 @@
 import React from "react";
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import Courses from "./components/Courses";
 import Partners from "./components/Partners";
 import Content from "./components/Content";
 import Learn from "./components/Learn";
+import Navbar from "./components/Navbar";
+import Blog from "./components/Blog";
 import "@fortawesome/fontawesome-free/css/all.min.css";
 
 function App() {
   return (
-    <div className="App">
-      <div className="container">
-        <nav className="navbar navbar-expand-lg navbar-light navbar-fixed-top bg-whites">
-          <a className="navbar-brand" href="#">
-            Blog App
-          </a>
-          <button
-            className="navbar-toggler"
-            type="button"
-            data-toggle="collapse"
-            data-target="#navbarNav"
-            aria-controls="navbarNav"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span className="navbar-toggler-icon"></span>
-          </button>
-          <div className="collapse navbar-collapse" id="navbarNav">
-            <ul className="navbar-nav ml-auto">
-              <li className="nav-item active">
-                <a className="nav-link" href="#">
-                  <i className="fas fa-home"></i>
-                  <span className="sr-only">(current)</span>
-                </a>
-              </li>
-              <li className="nav-item">
-                <a className="nav-link" href="#courses">
-                  Courses
-                </a>
-              </li>
-              <li className="nav-item">
-                <a className="nav-link" href="#">
-                  Blog
-                </a>
-              </li>
-              <li className="nav-item">
-                <a className="nav-link" href="#">
-                  Log In
-                </a>
-              </li>
-            </ul>
-          </div>
-        </nav>
-      </div>
-      {/*<!-- Content -->*/}
-      <Content />
-
-      <Learn />
-      {/*<!-- Courses -->*/}
-      <Courses />
-
-      {/*<!-- Partnerss -->*/}
-      <Partners />
-    </div>
+    <Router>
+      <Navbar />
+      <Route exact path="/">
+        <Content />
+        <Learn />
+        <Courses />
+        <Partners />
+      </Route>
+      <Route path="/blog">
+        <Blog />
+      </Route>
+    </Router>
   );
 }
 
