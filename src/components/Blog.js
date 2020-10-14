@@ -2,51 +2,75 @@ import React from "react";
 
 function Blog() {
   return (
-    <div className="container py-5" id="courses">
+    <div className="container py-5" id="courses" style={{ height: "80vh" }}>
       <div className="row">
-        <div className="col-md-8 offset-md-2 text-center pb-5">
-          <h2>Blog Posts</h2>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            Voluptatibus, expedita laudantium. Suscipit commodi et non?
-          </p>
+        <div className="col my-4">
+          <h1 className="text-center">Blog</h1>
         </div>
       </div>
-
       <div className="row">
         <div className="col-md-4">
-          <div className="card p-2" style={{ width: "20rem" }}>
-            <div className="card-body text-center">
-              <i className="fas fa-mobile-alt fa-3x py-2 courses-icon"></i>
-              <h5 className="card-title">Mobile App Development</h5>
+          <div className="card mb-4">
+            <div className="card-body">
+              <h2 className="card-title">Post Title</h2>
               <p className="card-text">
-                Some quick example text to build on the card title and make up
-                the bulk of the card's content.
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Reiciendis aliquid atque, nulla? Quos cum ex quis soluta, a
+                laboriosam. Dicta expedita corporis animi vero voluptate
+                voluptatibus possimus, veniam magni quis!
               </p>
+              <a href="#" className="btn btn-danger">
+                Read More &rarr;
+              </a>
+            </div>
+            <div className="card-footer text-muted">
+              Posted on January 1, 2020
             </div>
           </div>
         </div>
         <div className="col-md-4">
-          <div className="card p-2" style={{ width: "20rem" }}>
-            <div className="card-body text-center">
-              <i className="fas fa-laptop-code fa-3x py-2 courses-icon"></i>
-              <h5 className="card-title">Web Development</h5>
+          <div className="card mb-4">
+            <div className="card-body">
+              <h2 className="card-title">Post Title</h2>
               <p className="card-text">
-                Some quick example text to build on the card title and make up
-                the bulk of the card's content.
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Reiciendis aliquid atque, nulla? Quos cum ex quis soluta, a
+                laboriosam. Dicta expedita corporis animi vero voluptate
+                voluptatibus possimus, veniam magni quis!
               </p>
+              <a href="#" className="btn btn-danger">
+                Read More &rarr;
+              </a>
+            </div>
+            <div className="card-footer text-muted">
+              Posted on January 1, 2020
             </div>
           </div>
         </div>
         <div className="col-md-4">
-          <div className="card p-2" style={{ width: "20rem" }}>
-            <div className="card-body text-center">
-              <i className="fas fa-cogs fa-3x py-2 courses-icon"></i>
-              <h5 className="card-title">Machine Learning</h5>
+          <div className="card mb-4">
+            <div className="card-body">
+              <h2 className="card-title">Post Title</h2>
               <p className="card-text">
-                Some quick example text to build on the card title and make up
-                the bulk of the card's content.
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Reiciendis aliquid atque, nulla? Quos cum ex quis soluta, a
+                laboriosam. Dicta expedita corporis animi vero voluptate
+                voluptatibus possimus, veniam magni quis!
               </p>
+              <div className="d-flex justify-content-between align-items-center">
+                <a href="#" className="btn btn-danger">
+                  Read More &rarr;
+                </a>
+
+                <div className="d-flex align-items-center justify-content-center">
+                  <i class="far fa-thumbs-down"></i>
+                  <span className="p-2">0</span>
+                  <i class="far fa-thumbs-up"></i>
+                </div>
+              </div>
+            </div>
+            <div className="card-footer text-muted">
+              Posted on January 1, 2020
             </div>
           </div>
         </div>

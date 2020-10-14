@@ -9,6 +9,7 @@ import Learn from "./components/Learn";
 import Navbar from "./components/Navbar";
 import Blog from "./components/Blog";
 import "@fortawesome/fontawesome-free/css/all.min.css";
+import Footer from "./components/Footer";
 
 function App() {
   return (
@@ -23,6 +24,7 @@ function App() {
       <Route path="/blog">
         <Blog />
       </Route>
+      <Footer />
     </Router>
   );
 }
